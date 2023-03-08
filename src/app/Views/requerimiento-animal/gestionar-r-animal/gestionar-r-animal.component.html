@@ -1,0 +1,65 @@
+<div class="container text-right col-9">
+  <div class="row">
+    <table class="table table-hover ">
+      <thead>
+        <tr class="encabezado">
+          <th width="8%">Id</th>
+          <th>Nombre fase</th>
+          <th>MS %</th>
+          <th>EM AVES Kg</th>
+          <th>Proteina cruda %</th>
+          <th>Fibra cruda %</th>
+          <th>Ext etereo %</th>
+          <th>Calcio %</th>
+          <th>Fosforo Disp %</th>
+          <th>Sodio %</th>
+          <th>Ardinina %</th>
+          <th>Lisina %</th>
+          <th>Meteonina %</th>
+          <th>Met+Cis %</th>
+          <th>Treonina %</th>
+          <th>Triptofano %</th>
+          <th>Ceniza %</th>
+          <th>Codigo de especie</th>
+          <th class="text-center">Opciones...</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let req of requerimientosa">
+          <td> {{req.idRequerimiento_animal}}</td>
+          <td> {{req.nombre_fase}} </td>
+          <td> {{req.m_s}} </td>
+          <td> {{req.e_m_ave}} </td>
+          <td> {{req.e_d_cerdo}} </td>
+
+          <td> {{req.proteina}}</td>
+          <td> {{req.fibra_cruda}} </td>
+          <td> {{req.ext_etereo}} </td>
+          <td> {{req.calcio}} </td>
+          <td> {{req.fosf_disp}} </td>
+          <td> {{req.sodio}}</td>
+          <td> {{req.arginia}} </td>
+          <td> {{req.lisina}} </td>
+          <td> {{req.metronina}} </td>
+          <td> {{req.met_cis}} </td>
+          <td> {{req.treonina}} </td>
+          <td> {{req.triptofano}} </td>
+          <td> {{req.ceniza}} </td>
+          
+          <td>
+            <div class="btn-group">
+
+              <a [routerLink]="['animal/detalle']" type="button " class="btn btn-success rounded-3 ml-1" >Ver </a>
+              <a [routerLink]="['animal/actualizar']" title="Editar " type="button " class="btn btn-primary rounded-3 ml-1">Editar </a>
+              <button class="btn btn-danger rounded-3 ml-1" onclick="return eliminar(); " type="submit ">
+                Eliminar
+              </button>
+            </div>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

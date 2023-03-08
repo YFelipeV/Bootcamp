@@ -1,0 +1,21 @@
+<table border="1px">
+
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre Animal</th>
+      <th scope="col">Creado</th>
+      <th scope="col"> Actualizado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let animal of animales">
+      <th scope="row">{{animal.nombre_especie}}</th>
+    </tr>
+
+  </tbody>
+  <tfoot>
+  </tfoot>
+</table>
+
+

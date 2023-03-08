@@ -1,0 +1,23 @@
+.form-container{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(56, 121, 82, 0.799);
+    box-shadow: 0px 2px 2px 2px rgb(105, 136, 130);
+   
+}
+.w-input{
+    padding: 2px;
+    margin-bottom: 8px;
+    height: 40px;
+
+}
+ .w-lavel{
+   padding:6px;
+   margin-bottom: 8px;
+ } 
+ .bg-titulo{
+    text-shadow: 1px 2px 2px rgb(59, 97, 89);
+ }

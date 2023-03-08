@@ -1,0 +1,20 @@
+export interface requerimientoa{
+    idRequerimiento_animal:number,
+    nombre_fase:string
+    m_s:string
+    e_m_ave:string
+    e_d_cerdo:string
+    proteina:string
+    fibra_cruda:string
+    ext_etereo:string
+    calcio:string
+    fosf_disp:string
+    sodio:string
+    arginia:string
+    lisina:string
+    metronina:string
+    met_cis:string
+    treonina:string
+    triptofano:string
+    ceniza:string
+}
